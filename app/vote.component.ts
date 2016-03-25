@@ -6,6 +6,9 @@ import {Component, Input, EventEmitter, Output} from 'angular2/core'
   styles: [`
     .glyphicon {
       color: #ccc;
+    }
+    
+    .vote-button {
       cursor: pointer;
     }
     

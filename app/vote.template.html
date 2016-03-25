@@ -1,7 +1,7 @@
 <div style="width:20px;" align="center">
   <strong>
-    <span class="glyphicon glyphicon-menu-up" [class.highlighted]="myVote == 1" (click)="onClick(1)"></span>
+    <span class="glyphicon glyphicon-menu-up vote-button" [class.highlighted]="myVote == 1" (click)="onClick(1)"></span>
     <span style="color:#ccc" >{{ totalVotes || 0}}</span>
-    <span class="glyphicon glyphicon-menu-down" [class.highlighted]="myVote == -1" (click)="onClick(-1)"></span>
+    <span class="glyphicon glyphicon-menu-down vote-button" [class.highlighted]="myVote == -1" (click)="onClick(-1)"></span>
   </strong>
 </div>
