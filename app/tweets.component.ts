@@ -5,8 +5,8 @@ import {TweetComponent} from './tweet.component';
 @Component({
 	selector: 'tweets',
 	template: `
-			<ul>
-				<li *ngFor="#tweet of tweets">
+			<ul class="media-list">
+				<li class="media" *ngFor="#tweet of tweets">
 					<tweet 
             [name]="tweet.name"
             [handle]="tweet.handle"

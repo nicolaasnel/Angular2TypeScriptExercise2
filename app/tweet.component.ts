@@ -7,7 +7,7 @@ import {LikeComponent} from './like.component';
       <div class="media">
         <div class="media-left">
           <a href="#">
-            <img class="media-object" [src]="image">
+            <img class="media-object img-rounded" [src]="image">
           </a>
         </div>
         <div class="media-body">

@@ -8,13 +8,12 @@ import {TweetsComponent} from './tweets.component'
     selector: 'my-app',
     template: `
       <div class="jumbotron col-lg-6">
+      <tweets></tweets>
+      <h4>Other components:</h4>
         <div><span class="glyphicon glyphicon-star"></span>
         <favourite [is-favourite]="post.isFavourite" (change)="onFavouriteChange($event)"></favourite></div>
         <div><like [is-liked]="tweet.isLiked" [total-likes]="tweet.totalLikes"></like></div>
         <div><vote [voteCount]="vote.voteCount" [myVote]="vote.myVote" (change)="onVoteChange($event)"></vote>
-      </div>
-      <div>
-        <tweets></tweets>
       </div>
     `,
     directives: [FavouriteComponent, LikeComponent, VoteComponent,TweetsComponent]
